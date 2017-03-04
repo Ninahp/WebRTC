@@ -27,3 +27,8 @@ Set up a messaging service on Node using socket.io.
 Use that to create 'rooms' and exchange messages. 
 
 
+### todo  
+Fix issue with Canvas not showing 
+Deploy on Heroku 
+
+Code link → https://codelabs.developers.google.com/codelabs/webrtc-web/#0
