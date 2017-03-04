@@ -17,6 +17,10 @@ var constraints = {
   video: true
 };
 var video = document.querySelector('video');
+/*
+If getUserMedia() is successful,
+ the video stream from the webcam is set as the source of the video element:
+*/
 
 function successCallback(stream) {
   window.stream = stream; // stream available to console
