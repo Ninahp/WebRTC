@@ -1,7 +1,16 @@
 'use strict';
 
+/*
+This technology is still relatively new, so browsers are still using prefixed names for getUserMedia. 
+Hence the shim code at the top of main.js!
+*/
+
 navigator.getUserMedia = navigator.getUserMedia ||
     navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+
+/*
+The constraints argument allows you to specify what media to get — in this example, video and not audio
+*/
 
 var constraints = {
   audio: false,
