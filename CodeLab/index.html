@@ -28,8 +28,25 @@
         <button id="hangupButton">Hang Up</button>
     </div>
 
-<script src="js/lib/adapter.js"></script>
-<!--
+<div>
+    <textarea id="dataChannelSend" disabled
+    placeholder="Press Start, enter some text, then press Send."></textarea>
+  <textarea id="dataChannelReceive" disabled></textarea>
+
+  <div id="buttons">
+    <button id="startButton">Start</button>
+    <button id="sendButton">Send</button>
+    <button id="closeButton">Stop</button>
+  </div>
+
+</div>
+
+    <!--
+
+    https://codelabs.developers.google.com/codelabs/webrtc-web/#4
+-->
+    <script src="js/lib/adapter.js"></script>
+    <!--
     adapter.js is a shim to insulate apps from spec changes and prefix differences.
 
 In fact, the standards and protocols used for WebRTC implementations are highly stable, and there are only a few prefixed names.
